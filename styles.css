@@ -1,0 +1,51 @@
+.header{
+    width: 100%;
+    gap: 10px;
+    background-color: azure;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    align-items: center;
+}
+.presentation{
+    width: 100%;
+    height: 200px;
+    margin-top: 100px;
+    background-color: azure;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+.description{
+    width: 100%;
+    gap: 100px;
+    margin-top: 100px;
+    background-color: azure;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    align-items: center;
+}
+p{
+    margin: 150px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: justify;
+    padding: 50px;
+    border: 5px solid #999;
+}
+a{
+    content: url(https://camo.githubusercontent.com/70f4bfbd95b8397b9dbba3751ad7b52c7b2bcccc9d2e85c4883c6a823b17f7fc/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4769744875622d626c61636b3f7374796c653d666f722d7468652d6261646765266c6f676f3d676974687562);
+}
+.footer{
+    width: 100%;
+    gap: 20px;
+    background-color: azure;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    align-items: center;
+}
