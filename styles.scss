@@ -68,7 +68,7 @@ body{
     color: $color_white;
     width: 100%;
     height: 200px;
-    margin-top: 100px;
+    margin-top: 200px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -89,15 +89,25 @@ body{
     color: $color_white;
     width: 100%;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column;
+    justify-content: space-between;
     align-content: stretch;
     align-items: center;
+    margin: 100px 0px 100px 0px;
+    font-size: 30px;
     p{
-      margin: 100px 0px 100px 800px;
+      margin: 100px 0px 100px 0px;
+      width: 50%;
       background-color: $color_background_dark_green;
       text-align: justify;
       padding: 50px;
       border-radius: 30px;
+    }
+    #left{
+      align-self: flex-start;
+    }
+    #right{
+      align-self: flex-end;
     }
 }
 
