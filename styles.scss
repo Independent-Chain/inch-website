@@ -1,47 +1,71 @@
-$background: #fafbff;
-$button-width: 120px;
-$border-radius: 5px;
+$color_background: rgb(19,18,24);
+$color_text: rgb(231,231,231);
+$color_background_cases: rgb(57,64,61);
+
+body{
+  margin: 0px;
+  background-color: $color_background;
+}
 
 .header{
     width: 100%;
-    gap: 10px;
-    background-color: azure;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-flow: row nowrap;
+    justify-content: space-between;
     align-content: stretch;
     align-items: center;
-}
-.container{
-    width: 130px;
-    height: 40px;
-    text-align: center;
-}
-.button{
-  display: flex;
-  width: $button-width;
-  height: 40px;
-  justify-content: center;
-  align-items: center;
-  margin: 0.5rem;
-  line-height: 35px;
-  border: 1px solid;
-  border-radius: $border-radius;
-  text-align: center;
-  font-size: 16px;
-  color: #000;
-  text-decoration: none;
-  transition: all 0.35s;
-  box-sizing: border-box;
+
+    .buttons{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center;
+    }
+
+    h1{
+      color: $color_text;
+      margin-left: 20px;
+      margin-right: 50px;
+    }
+    
+    button{
+      display: flex;
+      height: 50px;
+      justify-content: center;
+      align-items: center;
+      line-height: 35px;
+      text-align: center;
+      color: $color_text;
+      text-decoration: none;
+      transition: all 0.35s;
+      box-sizing: border-box;
+    }
+    .buttontype1{
+      margin: 0px 50px 0px 50px;
+      width: 200px;
+      background: none;
+      font-size: 16px;
+      border: 1px solid $color_text;
+      border-radius: 25px;
+    }
+    .buttontype2{
+      margin: 0px 50px 0px 20px;
+      width: 150px;
+      background-color: $color_background_cases;
+      font-size: 18px;
+      border: 0px solid;
+      border-radius: 20px;
+    }
 }
 
   
 .presentation{
     font: 100% sans-serif;
+    color: $color_text;
     width: 100%;
     height: 200px;
     margin-top: 100px;
-    background-color: azure;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -56,10 +80,10 @@ span {
     }
 }
 .description{
+    color: $color_text;
     width: 100%;
     gap: 100px;
     margin-top: 100px;
-    background-color: azure;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -67,16 +91,16 @@ span {
     align-items: center;
 }
 p{
+    background-color: $color_background_cases;
     margin: 150px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     text-align: justify;
     padding: 50px;
-    border: 5px solid #999;
+    border-radius: 30px;
 }
 .footer{
+    color: $color_text;
     width: 100%;
     gap: 20px;
-    background-color: azure;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
