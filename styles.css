@@ -44,7 +44,7 @@ body {
   border-radius: 25px;
 }
 .header .buttontype2 {
-  margin: 0px 50px 0px 20px;
+  margin-right: 20px;
   width: 150px;
   background-color: #39403d;
   font-size: 20px;
@@ -63,12 +63,11 @@ body {
   align-items: center;
   justify-content: left;
 }
-
-span {
+.presentation span {
   margin-left: 200px;
   font-size: 2em;
 }
-span h3 {
+.presentation span h3 {
   margin-left: 100px;
   font-size: 0.9em;
 }
@@ -76,30 +75,42 @@ span h3 {
 .description {
   color: #e7e7e7;
   width: 100%;
-  gap: 100px;
-  margin-top: 100px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-flow: column nowrap;
   align-content: stretch;
   align-items: center;
 }
-
-p {
+.description p {
+  margin: 100px 0px 100px 800px;
   background-color: #39403d;
-  margin: 150px;
   text-align: justify;
   padding: 50px;
   border-radius: 30px;
 }
 
-.footer {
+.launchers {
+  margin-left: 80px;
   color: #e7e7e7;
+}
+.launchers button {
+  color: #131313;
+  margin-right: 20px;
+  height: 60px;
+  width: 220px;
+  background-color: #b7cfae;
+  font-size: 24px;
+  border: 0px solid;
+  border-radius: 30px;
+}
+
+.footer {
+  background-color: #39403d;
   width: 100%;
-  gap: 20px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-flow: row nowrap;
+  justify-content: space-between;
   align-content: stretch;
   align-items: center;
+  margin-top: 100px;
+  padding-top: 120px;
 }/*# sourceMappingURL=styles.css.map */

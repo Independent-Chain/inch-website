@@ -53,7 +53,7 @@ body{
       border-radius: 25px;
     }
     .buttontype2{
-      margin: 0px 50px 0px 20px;
+      margin-right: 20px;
       width: 150px;
       background-color: $color_background_dark_green;
       font-size: 20px;
@@ -73,40 +73,59 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: left;
-}
-span {
-    margin-left: 200px;
-    font-size: 2em;
-    h3{
-        margin-left: 100px;
-        font-size: 0.9em;
+
+    span {
+        margin-left: 200px;
+        font-size: 2em;
+        h3{
+            margin-left: 100px;
+            font-size: 0.9em;
+        }
     }
 }
+
+
 .description{
     color: $color_white;
     width: 100%;
-    gap: 100px;
-    margin-top: 100px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-flow: column nowrap;
     align-content: stretch;
     align-items: center;
+    p{
+      margin: 100px 0px 100px 800px;
+      background-color: $color_background_dark_green;
+      text-align: justify;
+      padding: 50px;
+      border-radius: 30px;
+    }
 }
-p{
-    background-color: $color_background_dark_green;
-    margin: 150px;
-    text-align: justify;
-    padding: 50px;
+
+
+.launchers{
+  margin-left: 80px;
+  color: $color_white;
+  button{
+    color: $color_background_black;
+    margin-right: 20px;
+    height: 60px;
+    width: 220px;
+    background-color: $color_background_light_green;
+    font-size: 24px;
+    border: 0px solid;
     border-radius: 30px;
+  }
 }
+
+
 .footer{
-    color: $color_white;
-    width: 100%;
-    gap: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: stretch;
-    align-items: center;
+  background-color: $color_background_dark_green;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: center;
+  margin-top: 100px;
+  padding-top: 120px;
 }
