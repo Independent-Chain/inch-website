@@ -1,51 +1,116 @@
-.header{
-    width: 100%;
-    gap: 10px;
-    background-color: azure;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: stretch;
-    align-items: center;
+body {
+  margin: 0px;
+  background-color: #131313;
 }
-.presentation{
-    width: 100%;
-    height: 200px;
-    margin-top: 100px;
-    background-color: azure;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: left;
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: center;
 }
-.description{
-    width: 100%;
-    gap: 100px;
-    margin-top: 100px;
-    background-color: azure;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: stretch;
-    align-items: center;
+.header .buttons {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
 }
-p{
-    margin: 150px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    text-align: justify;
-    padding: 50px;
-    border: 5px solid #999;
+.header h1 {
+  color: #e7e7e7;
+  margin-left: 20px;
+  margin-right: 50px;
 }
-a{
-    content: url(https://camo.githubusercontent.com/70f4bfbd95b8397b9dbba3751ad7b52c7b2bcccc9d2e85c4883c6a823b17f7fc/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4769744875622d626c61636b3f7374796c653d666f722d7468652d6261646765266c6f676f3d676974687562);
+.header button {
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  line-height: 35px;
+  text-align: center;
+  color: #e7e7e7;
+  text-decoration: none;
+  transition: all 0.35s;
+  box-sizing: border-box;
 }
-.footer{
-    width: 100%;
-    gap: 20px;
-    background-color: azure;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: stretch;
-    align-items: center;
+.header .buttontype1 {
+  margin: 0px 50px 0px 50px;
+  width: 200px;
+  background: none;
+  font-size: 16px;
+  border: 1px solid #e7e7e7;
+  border-radius: 25px;
 }
+.header .buttontype2 {
+  margin-right: 20px;
+  width: 150px;
+  background-color: #39403d;
+  font-size: 20px;
+  border: 0px solid;
+  border-radius: 20px;
+}
+
+.presentation {
+  font: 100% sans-serif;
+  color: #e7e7e7;
+  width: 100%;
+  height: 200px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+}
+.presentation span {
+  margin-left: 200px;
+  font-size: 2em;
+}
+.presentation span h3 {
+  margin-left: 100px;
+  font-size: 0.9em;
+}
+
+.description {
+  color: #e7e7e7;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: stretch;
+  align-items: center;
+}
+.description p {
+  margin: 100px 0px 100px 800px;
+  background-color: #39403d;
+  text-align: justify;
+  padding: 50px;
+  border-radius: 30px;
+}
+
+.launchers {
+  margin-left: 80px;
+  color: #e7e7e7;
+}
+.launchers button {
+  color: #131313;
+  margin-right: 20px;
+  height: 60px;
+  width: 220px;
+  background-color: #b7cfae;
+  font-size: 24px;
+  border: 0px solid;
+  border-radius: 30px;
+}
+
+.footer {
+  background-color: #39403d;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: center;
+  margin-top: 100px;
+  padding-top: 120px;
+}/*# sourceMappingURL=styles.css.map */

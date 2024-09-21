@@ -1,0 +1,131 @@
+$color_background_black: #131313;
+$color_background_light_green: #b7cfae;
+$color_background_dark_green: #39403d;
+$color_background_dark_gray: #1a1a1c;
+$color_background_light_gray: #656565;
+$color_white: #e7e7e7;
+
+body{
+  margin: 0px;
+  background-color: $color_background_black;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: center;
+
+    .buttons{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center;
+    }
+
+    h1{
+      color: $color_white;
+      margin-left: 20px;
+      margin-right: 50px;
+    }
+    
+    button{
+      display: flex;
+      height: 50px;
+      justify-content: center;
+      align-items: center;
+      line-height: 35px;
+      text-align: center;
+      color: $color_white;
+      text-decoration: none;
+      transition: all 0.35s;
+      box-sizing: border-box;
+    }
+    .buttontype1{
+      margin: 0px 50px 0px 50px;
+      width: 200px;
+      background: none;
+      font-size: 16px;
+      border: 1px solid $color_white;
+      border-radius: 25px;
+    }
+    .buttontype2{
+      margin-right: 20px;
+      width: 150px;
+      background-color: $color_background_dark_green;
+      font-size: 20px;
+      border: 0px solid;
+      border-radius: 20px;
+    }
+}
+
+  
+.presentation{
+    font: 100% sans-serif;
+    color: $color_white;
+    width: 100%;
+    height: 200px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+
+    span {
+        margin-left: 200px;
+        font-size: 2em;
+        h3{
+            margin-left: 100px;
+            font-size: 0.9em;
+        }
+    }
+}
+
+
+.description{
+    color: $color_white;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: stretch;
+    align-items: center;
+    p{
+      margin: 100px 0px 100px 800px;
+      background-color: $color_background_dark_green;
+      text-align: justify;
+      padding: 50px;
+      border-radius: 30px;
+    }
+}
+
+
+.launchers{
+  margin-left: 80px;
+  color: $color_white;
+  button{
+    color: $color_background_black;
+    margin-right: 20px;
+    height: 60px;
+    width: 220px;
+    background-color: $color_background_light_green;
+    font-size: 24px;
+    border: 0px solid;
+    border-radius: 30px;
+  }
+}
+
+
+.footer{
+  background-color: $color_background_dark_green;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: center;
+  margin-top: 100px;
+  padding-top: 120px;
+}
