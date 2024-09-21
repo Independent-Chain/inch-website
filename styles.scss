@@ -1,10 +1,13 @@
-$color_background: rgb(19,18,24);
-$color_text: rgb(231,231,231);
-$color_background_cases: rgb(57,64,61);
+$color_background_black: #131313;
+$color_background_light_green: #b7cfae;
+$color_background_dark_green: #39403d;
+$color_background_dark_gray: #1a1a1c;
+$color_background_light_gray: #656565;
+$color_white: #e7e7e7;
 
 body{
   margin: 0px;
-  background-color: $color_background;
+  background-color: $color_background_black;
 }
 
 .header{
@@ -24,7 +27,7 @@ body{
     }
 
     h1{
-      color: $color_text;
+      color: $color_white;
       margin-left: 20px;
       margin-right: 50px;
     }
@@ -36,7 +39,7 @@ body{
       align-items: center;
       line-height: 35px;
       text-align: center;
-      color: $color_text;
+      color: $color_white;
       text-decoration: none;
       transition: all 0.35s;
       box-sizing: border-box;
@@ -46,14 +49,14 @@ body{
       width: 200px;
       background: none;
       font-size: 16px;
-      border: 1px solid $color_text;
+      border: 1px solid $color_white;
       border-radius: 25px;
     }
     .buttontype2{
       margin: 0px 50px 0px 20px;
       width: 150px;
-      background-color: $color_background_cases;
-      font-size: 18px;
+      background-color: $color_background_dark_green;
+      font-size: 20px;
       border: 0px solid;
       border-radius: 20px;
     }
@@ -62,7 +65,7 @@ body{
   
 .presentation{
     font: 100% sans-serif;
-    color: $color_text;
+    color: $color_white;
     width: 100%;
     height: 200px;
     margin-top: 100px;
@@ -80,7 +83,7 @@ span {
     }
 }
 .description{
-    color: $color_text;
+    color: $color_white;
     width: 100%;
     gap: 100px;
     margin-top: 100px;
@@ -91,14 +94,14 @@ span {
     align-items: center;
 }
 p{
-    background-color: $color_background_cases;
+    background-color: $color_background_dark_green;
     margin: 150px;
     text-align: justify;
     padding: 50px;
     border-radius: 30px;
 }
 .footer{
-    color: $color_text;
+    color: $color_white;
     width: 100%;
     gap: 20px;
     display: flex;
